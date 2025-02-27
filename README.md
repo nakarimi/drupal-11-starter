@@ -55,6 +55,13 @@ This project sets up a Drupal environment using Docker. It includes a Drupal app
    ```bash
    docker-compose down
    ```
+6. **SSH Connection to the Containers**
+
+   To stop the running containers, use:
+
+   ```bash
+    docker exec -it drupal-starter bash
+   ```
 
 ## Volumes
 

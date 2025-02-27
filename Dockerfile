@@ -31,6 +31,8 @@ WORKDIR /var/www/html
 # Install Drush (inside the Drupal root directory)
 RUN composer require drush/drush
 
+# Add drush to the server alias
+RUN echo 'alias drush="vendor/bin/drush"' >> ~/.bashrc
 
 # Set PATH for Drush
 ENV PATH="/root/.composer/vendor/bin:${PATH}"
